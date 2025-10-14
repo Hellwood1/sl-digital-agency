@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat';
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+  padding: 0;
+  line-height: 0;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
