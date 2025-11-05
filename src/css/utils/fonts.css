@@ -1,0 +1,63 @@
+/* Space Grotesk font family */
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Open Sans'),
+    url(../../fonts/SpaceGrotesk/SpaceGrotesk-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Open Sans'),
+    url(../../fonts/SpaceGrotesk/SpaceGrotesk-Medium.woff2) format('woff2');
+}
+
+/* Onest font family */
+
+@font-face {
+  font-family: 'Onest';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Onest'),
+    url(../../fonts/Onest/Onest-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Onest';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Onest'),
+    url(../../fonts/Onest/Onest-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Onest';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Onest'),
+    url(../../fonts/Onest/Onest-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Onest';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Onest'),
+    url(../../fonts/Onest/Onest-SemiBold.woff2) format('woff2');
+}
