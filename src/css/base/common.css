@@ -70,3 +70,7 @@ a {
   outline: none;
   cursor: pointer;
 }
+
+.accent-color {
+  color: var(--yellow);
+}
