@@ -5,33 +5,101 @@
         <h2 class="about-us-title">Get in touch</h2>
         <div class="about-us-bg"></div>
       </div>
-      <div class="about-us-info-wrapper">
-        <div class="about-us-contact-info">
-          <h3 class="about-us-contact-info-title">
-            Get in touch in <span class="accent-color">Denmark</span>
-          </h3>
-          <address class="address">
-            <ul>
-              <li>
+      <div class="contacts-layout">
+        <div class="about-us-info-wrapper">
+          <div class="about-us-contact-info">
+            <h3 class="about-us-contact-info-title">
+              Get in touch in <span class="accent-color">Denmark</span>
+            </h3>
+            <address class="address">
+              <ul>
+                <li>
+                  <a
+                    class="phone-link"
+                    href="tel:+4550139475"
+                    aria-label="Ring til os på +45 50 13 94 75"
+                    >+45 5013 9475</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mail-link"
+                    href="mailto:skylanddigitalagency@gmail.com"
+                    ><picture>
+                      <!-- Desktop screen 1440 -->
+
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          ./img/about-us/mail/about-us-mail-desctop@1x.png 1x,
+                          ./img/about-us/mail/about-us-mail-desctop@2x.png 2x
+                        "
+                        type="image/png"
+                      />
+
+                      <!-- Tablet screen -->
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./img/about-us/mail/about-us-mail-tablet@1x.png 1x,
+                          ./img/about-us/mail/about-us-mail-tablet@2x.png 2x
+                        "
+                        type="image/png"
+                      />
+                      <!-- Mobile screen -->
+
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./img/about-us/mail/about-us-mail-mobile@1x.png 1x,
+                          ./img/about-us/mail/about-us-mail-mobile@2x.png 2x
+                        "
+                        type="image/png"
+                      />
+                      <img
+                        class="card-img"
+                        src="./img/about-us/mail/about-us-mail-mobile@1x.png"
+                        alt="Mail icon"
+                        loading="lazy"
+                      /> </picture
+                    >sl_agency@gmail.com</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <h3 class="about-us-contact-info-title">
+                  Get in touch in <span class="accent-color">Ukraine</span>
+                </h3>
                 <a
                   class="phone-link"
-                  href="tel:+4550139475"
-                  aria-label="Ring til os på +45 50 13 94 75"
-                  >+45 5013 9475</a
+                  href="tel:+380952083089"
+                  aria-label="Ring til os på +38 (095) 208 30 89"
+                  >+38(095) 208 30 89</a
                 >
-              </li>
-              <li>
+              </div>
+            </address>
+            <p class="description-text">Available from 10 AM to 8 PM</p>
+          </div>
+
+          <div class="about-us-social-media">
+            <h3 class="about-us-social-media-title">Social media</h3>
+            <ul class="about-us-social-media-list">
+              <li class="about-us-social-media-list-item">
                 <a
-                  class="mail-link"
-                  href="mailto:skylanddigitalagency@gmail.com"
-                  ><picture>
+                  href=""
+                  class="social-media-link"
+                  aria-label="Telegram link."
+                  target="_blank"
+                >
+                  <picture>
                     <!-- Desktop screen 1440 -->
 
                     <source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/about-us/mail/about-us-mail-desctop@1x.png 1x,
-                        ./img/about-us/mail/about-us-mail-desctop@2x.png 2x
+                        ./img/footer/desktop/telegram-icon-desktop@1x.png 1x,
+                        ./img/footer/desktop/telegram-icon-desktop@2x.png 2x
                       "
                       type="image/png"
                     />
@@ -41,8 +109,8 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/about-us/mail/about-us-mail-tablet@1x.png 1x,
-                        ./img/about-us/mail/about-us-mail-tablet@2x.png 2x
+                        ./img/footer/tablet/telegram-icon-tablet@1x.png 1x,
+                        ./img/footer/tablet/telegram-icon-tablet@2x.png 2x
                       "
                       type="image/png"
                     />
@@ -51,222 +119,159 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./img/about-us/mail/about-us-mail-mobile@1x.png 1x,
-                        ./img/about-us/mail/about-us-mail-mobile@2x.png 2x
+                        ./img/footer/mobile/telegram-icon-mobile@1x.png 1x,
+                        ./img/footer/mobile/telegram-icon-mobile@2x.png 2x
                       "
                       type="image/png"
                     />
                     <img
                       class="card-img"
-                      src="./img/about-us/mail/about-us-mail-mobile@1x.png"
-                      alt="Mail icon"
+                      src="./img/footer/mobile/telegram-icon-mobile@1x.png"
+                      alt="Telegram icon"
                       loading="lazy"
-                    /> </picture
-                  >sl_agency@gmail.com</a
+                    />
+                  </picture>
+                  Telegram
+                </a>
+              </li>
+              <li class="about-us-social-media-list-item">
+                <a
+                  href=""
+                  class="social-media-link"
+                  aria-label="Instagram link."
+                  target="_blank"
                 >
+                  <picture>
+                    <!-- Desktop screen 1440 -->
+
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/footer/desktop/instagram-icon-desktop@1x.png 1x,
+                        ./img/footer/desktop/instagram-icon-desktop@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+
+                    <!-- Tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/footer/tablet/instagram-icon-tablet@1x.png 1x,
+                        ./img/footer/tablet/instagram-icon-tablet@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <!-- Mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/footer/mobile/instagram-icon-mobile@1x.png 1x,
+                        ./img/footer/mobile/instagram-icon-mobile@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/footer/mobile/instagram-icon-mobile@1x.png"
+                      alt="Instagram icon"
+                      loading="lazy"
+                    />
+                  </picture>
+                  Instagram
+                </a>
+              </li>
+              <li class="about-us-social-media-list-item">
+                <a
+                  href=""
+                  class="social-media-link"
+                  aria-label="Linkedin link."
+                  target="_blank"
+                >
+                  <picture>
+                    <!-- Desktop screen 1440 -->
+
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/footer/desktop/linkedin-icon-desktop@1x.png 1x,
+                        ./img/footer/desktop/linkedin-icon-desktop@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+
+                    <!-- Tablet screen -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/footer/tablet/linkedin-icon-tablet@1x.png 1x,
+                        ./img/footer/tablet/linkedin-icon-tablet@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <!-- Mobile screen -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/footer/mobile/linkedin-icon-mobile@1x.png 1x,
+                        ./img/footer/mobile/linkedin-icon-mobile@2x.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/footer/mobile/linkedin-icon-mobile@1x.png"
+                      alt="Linkedin icon"
+                      loading="lazy"
+                    />
+                  </picture>
+                  Linkedin
+                </a>
               </li>
             </ul>
-            <h3 class="about-us-contact-info-title">
-              Get in touch in <span class="accent-color">Ukraine</span>
-            </h3>
-            <a
-              class="phone-link"
-              href="tel:+380952083089"
-              aria-label="Ring til os på +38 (095) 208 30 89"
-              >+38(095) 208 30 89</a
-            >
-          </address>
-          <p class="description-text">Available from 10 AM to 8 PM</p>
+          </div>
         </div>
 
-        <div class="about-us-social-media">
-          <h3 class="about-us-social-media-title">Social media</h3>
-          <ul class="about-us-social-media-list">
-            <li class="about-us-social-media-list-item">
-              <a
-                href=""
-                class="social-media-link"
-                aria-label="Telegram link."
-                target="_blank"
-              >
-                <picture>
-                  <!-- Desktop screen 1440 -->
-
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./img/footer/desktop/telegram-icon-desktop@1x.png 1x,
-                      ./img/footer/desktop/telegram-icon-desktop@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-
-                  <!-- Tablet screen -->
-
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/footer/tablet/telegram-icon-tablet@1x.png 1x,
-                      ./img/footer/tablet/telegram-icon-tablet@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <!-- Mobile screen -->
-
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./img/footer/mobile/telegram-icon-mobile@1x.png 1x,
-                      ./img/footer/mobile/telegram-icon-mobile@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    class="card-img"
-                    src="./img/footer/mobile/telegram-icon-mobile@1x.png"
-                    alt="Telegram icon"
-                    loading="lazy"
-                  />
-                </picture>
-                Telegram
-              </a>
-            </li>
-            <li class="about-us-social-media-list-item">
-              <a
-                href=""
-                class="social-media-link"
-                aria-label="Instagram link."
-                target="_blank"
-              >
-                <picture>
-                  <!-- Desktop screen 1440 -->
-
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./img/footer/desktop/instagram-icon-desktop@1x.png 1x,
-                      ./img/footer/desktop/instagram-icon-desktop@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-
-                  <!-- Tablet screen -->
-
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/footer/tablet/instagram-icon-tablet@1x.png 1x,
-                      ./img/footer/tablet/instagram-icon-tablet@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <!-- Mobile screen -->
-
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./img/footer/mobile/instagram-icon-mobile@1x.png 1x,
-                      ./img/footer/mobile/instagram-icon-mobile@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    class="card-img"
-                    src="./img/footer/mobile/instagram-icon-mobile@1x.png"
-                    alt="Instagram icon"
-                    loading="lazy"
-                  />
-                </picture>
-                Instagram
-              </a>
-            </li>
-            <li class="about-us-social-media-list-item">
-              <a
-                href=""
-                class="social-media-link"
-                aria-label="Linkedin link."
-                target="_blank"
-              >
-                <picture>
-                  <!-- Desktop screen 1440 -->
-
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./img/footer/desktop/linkedin-icon-desktop@1x.png 1x,
-                      ./img/footer/desktop/linkedin-icon-desktop@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-
-                  <!-- Tablet screen -->
-
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/footer/tablet/linkedin-icon-tablet@1x.png 1x,
-                      ./img/footer/tablet/linkedin-icon-tablet@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <!-- Mobile screen -->
-
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./img/footer/mobile/linkedin-icon-mobile@1x.png 1x,
-                      ./img/footer/mobile/linkedin-icon-mobile@2x.png 2x
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    class="card-img"
-                    src="./img/footer/mobile/linkedin-icon-mobile@1x.png"
-                    alt="Linkedin icon"
-                    loading="lazy"
-                  />
-                </picture>
-                Linkedin
-              </a>
-            </li>
-          </ul>
+        <div class="about-us-form-wrapper">
+          <h3 class="about-us-form-title">
+            Share your contacts, and we'll be in touch shortly
+          </h3>
+          <form class="contact-form" id="contactForm" method="POST" action="">
+            <input
+              placeholder="Enter your Name*"
+              class="contactForm-input"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <input
+              class="contactForm-input"
+              placeholder="Enter your phone number*"
+              pattern="[0-9]+"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+            <textarea
+              class="contactForm-input"
+              placeholder="Comment"
+              id="comment"
+              rows="6"
+              name="comment"
+              required
+            ></textarea>
+            <button class="contactForm-btn" type="submit" id="submitBtn">
+              Send
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-    <div class="about-us-form-wrapper">
-      <h3 class="about-us-form-title">
-        Share your contacts, and we'll be in touch shortly
-      </h3>
-      <form class="contact-form" id="contactForm" method="POST" action="">
-        <input
-          placeholder="Enter your Name*"
-          class="contactForm-input"
-          type="text"
-          id="name"
-          name="name"
-          required
-        />
-        <input
-          class="contactForm-input"
-          placeholder="Enter your phone number*"
-          pattern="[0-9]+"
-          type="tel"
-          id="phone"
-          name="phone"
-          required
-        />
-        <textarea
-          class="contactForm-input"
-          placeholder="Comment"
-          id="comment"
-          rows="4"
-          name="comment"
-          required
-        ></textarea>
-        <button class="contactForm-btn" type="submit" id="submitBtn">
-          Send
-        </button>
-      </form>
     </div>
   </div>
 </section>

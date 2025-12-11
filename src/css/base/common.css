@@ -58,8 +58,10 @@ button {
   outline: none;
 }
 
-input {
+input,
+textarea {
   font-family: inherit;
+  outline: none;
 }
 
 a {

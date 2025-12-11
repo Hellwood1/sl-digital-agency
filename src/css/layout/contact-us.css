@@ -1,8 +1,7 @@
 /**********************************MOBILE**********************************/
 
 .about-us-section-container {
-  padding-bottom: 50px;
-
+  padding: 30px 0 50px 0;
   border-radius: 60px 60px 0 0;
   background: var(--white);
 }
@@ -93,6 +92,13 @@
   margin-bottom: 18px;
 }
 
+.about-us-social-media-title {
+  color: var(--black);
+  font-size: 24px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 .about-us-social-media-list {
   display: flex;
   flex-direction: column;
@@ -107,13 +113,6 @@
   display: flex;
   column-gap: 14px;
   align-items: center;
-}
-
-.about-us-social-media-title {
-  color: var(--black);
-  font-size: 24px;
-  line-height: 1.4;
-  text-transform: uppercase;
 }
 
 .social-media-link {
@@ -153,13 +152,18 @@
   gap: 10px;
   align-self: stretch;
   background-color: inherit;
-
+  color: var(--white);
   border-radius: 12px;
   border: 1px solid var(--white);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 input::placeholder,
 textarea::placeholder {
+  font-size: 16px;
   color: var(--white);
 }
 
@@ -170,11 +174,215 @@ textarea::placeholder {
   border: inherit;
   border-radius: 200px;
   background: var(--white);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
+.contactForm-input:hover,
+.contactForm-input:focus,
+.contactForm-btn:hover,
+.contactForm-btn:focus {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 /**********************************TABLET**********************************/
 
-.about-us-info-wrapper {
-  flex-direction: row;
-  column-gap: 18px;
+@media screen and (min-width: 768px) {
+  .about-us-section-container {
+    padding: 60px 0 55px 0;
+  }
+
+  .about-us-info-wrapper {
+    flex-direction: row;
+    column-gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .about-us-title {
+    max-width: 440px;
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+
+  .about-us-bg {
+    width: 196px;
+    height: 170px;
+    background-position: center;
+    background-image: image-set(
+      url('../../img/about-us/bg/about-us-bg-tablet@1x.png') 1x,
+      url('../../img/about-us/bg/about-us-bg-tablet@2x.png') 2x
+    );
+  }
+
+  /* Контейнер з контактною інформацією */
+  .about-us-contact-info {
+    width: 100%;
+    padding: 32px 40px;
+    gap: 18px;
+  }
+
+  .about-us-contact-info-title {
+    font-size: 22px;
+    margin-bottom: 0px;
+    text-transform: none;
+  }
+
+  .address ul {
+    margin-bottom: 30px;
+  }
+
+  .address div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  /* Контейнер з посиланнями на соціальні мережі */
+
+  .about-us-social-media {
+    width: 100%;
+    padding: 32px 40px;
+    row-gap: 30px;
+    margin-bottom: 0px;
+  }
+
+  .about-us-social-media-title {
+    font-size: 22px;
+    text-transform: none;
+  }
+
+  .about-us-social-media-list {
+    row-gap: 24px;
+  }
+
+  /* Форма */
+
+  .about-us-form-wrapper {
+    padding: 60px;
+    row-gap: 32px;
+  }
+
+  .contact-form {
+    row-gap: 32px;
+  }
+
+  .contactForm-input:hover,
+  .contact-form-input:focus {
+    border-color: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 18px;
+  }
+}
+
+/**********************************DESKTOP**********************************/
+
+@media screen and (min-width: 1440px) {
+  .about-us-section-container {
+    padding: 130px 0 165px 0;
+  }
+
+  .about-us-title {
+    max-width: 450px;
+    text-align: right;
+    font-size: 140px;
+    line-height: 0.9;
+    padding-left: 86px;
+    margin-bottom: 58px;
+  }
+
+  .about-us-bg {
+    width: 310px;
+    height: 264px;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    background-image: image-set(
+      url('../../img/about-us/bg/about-us-bg-desctop@1x.png') 1x,
+      url('../../img/about-us/bg/about-us-bg-desctop@2x.png') 2x
+    );
+  }
+
+  .about-us-second-wrapper {
+    justify-content: space-between;
+  }
+
+  .about-us-bg {
+    margin: 0 auto;
+  }
+
+  .contacts-layout {
+    display: flex;
+    column-gap: 68px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .about-us-info-wrapper {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  /* Контейнер з контактною інформацією */
+  .about-us-contact-info {
+    width: 456px;
+  }
+
+  .phone-link,
+  .mail-link {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .description-text {
+    margin-top: 12px;
+  }
+
+  /* Контейнер з посиланнями на соціальні мережі */
+
+  .about-us-social-media {
+    width: 456px;
+    padding: 32px 40px;
+    row-gap: 24px;
+    margin-bottom: 0px;
+  }
+
+  .about-us-social-media-list {
+    row-gap: 24px;
+  }
+
+  .about-us-social-media-list li a {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* Форма */
+
+  .about-us-form-wrapper {
+    row-gap: 46px;
+  }
+
+  .about-us-form-title {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .contactForm-input {
+    padding: 20px 14px;
+  }
+
+  .contactForm-input:hover,
+  .contact-form-input:focus {
+    border-color: none;
+  }
+
+  .contactForm-btn {
+    font-size: 18px;
+    padding: 26px 46px;
+  }
 }
