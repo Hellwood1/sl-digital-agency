@@ -3,7 +3,7 @@
     <div class="about-us-first-wrapper">
       <div class="about-us-second-wrapper">
         <h2 class="about-us-title">Get in touch</h2>
-        <div class="about-us-bg"></div>
+        <div class="about-us-bg" aria-hidden="true" role="presentation"></div>
       </div>
       <div class="contacts-layout">
         <div class="about-us-info-wrapper">
@@ -14,16 +14,13 @@
             <address class="address">
               <ul>
                 <li>
-                  <a
-                    class="phone-link"
-                    href="tel:+4550139475"
-                    aria-label="Ring til os på +45 50 13 94 75"
-                    >+45 5013 9475</a
-                  >
+                  <a class="phone-link" href="tel:+4550139475">+45 5013 9475</a>
                 </li>
                 <li>
                   <a
                     class="mail-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="mailto:skylanddigitalagency@gmail.com"
                     ><picture>
                       <!-- Desktop screen 1440 -->
@@ -73,6 +70,8 @@
                 </h3>
                 <a
                   class="phone-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="tel:+380952083089"
                   aria-label="Ring til os på +38 (095) 208 30 89"
                   >+38(095) 208 30 89</a
@@ -87,10 +86,11 @@
             <ul class="about-us-social-media-list">
               <li class="about-us-social-media-list-item">
                 <a
-                  href=""
+                  href="https://t.me/+4550139475"
                   class="social-media-link"
                   aria-label="Telegram link."
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <picture>
                     <!-- Desktop screen 1440 -->
@@ -140,6 +140,7 @@
                   class="social-media-link"
                   aria-label="Instagram link."
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <picture>
                     <!-- Desktop screen 1440 -->
@@ -189,6 +190,7 @@
                   class="social-media-link"
                   aria-label="Linkedin link."
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <picture>
                     <!-- Desktop screen 1440 -->
@@ -247,6 +249,7 @@
               type="text"
               id="name"
               name="name"
+              autocomplete="name"
               required
             />
             <input
@@ -256,6 +259,7 @@
               type="tel"
               id="phone"
               name="phone"
+              autocomplete="phone"
               required
             />
             <textarea
