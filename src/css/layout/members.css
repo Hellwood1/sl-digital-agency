@@ -22,13 +22,47 @@
 }
 
 .members-cards {
+  width: 282px;
   display: flex;
   color: var(--black);
+  height: 450px;
   padding: 18px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  row-gap: 18px;
 
   border-radius: 30px;
   background: var(--white);
+}
+
+.members-cards-role-title {
+  font-size: 20px;
+  text-align: right;
+  line-height: 1.36;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.members-card-photo-wrapper {
+  display: flex;
+  width: 148px;
+  height: 198px;
+  border-radius: 10px;
+  margin-left: auto;
+  background-color: var(--black);
+}
+
+.members-cards-name {
+  font-size: 24px;
+  line-height: 1.41;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.members-cards-text {
+  font-family: 'SpaceGrotesk';
+  font-size: 15px;
+
+  font-weight: 400;
+  line-height: 1.5;
 }

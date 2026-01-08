@@ -3,7 +3,7 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper('.members-swiper-init', {
   loop: false,
-  slidesPerView: 1.08,
+  slidesPerView: 1,
   spaceBetween: 12,
   pagination: {
     el: '.swiper-pagination',
