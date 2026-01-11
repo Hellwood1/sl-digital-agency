@@ -1,6 +1,6 @@
 .members-section-wrapper {
   background-color: var(--black);
-  margin: 50px 0 108px 0;
+  padding: 50px 0 108px 0;
 }
 
 .members-title {
@@ -65,4 +65,70 @@
 
   font-weight: 400;
   line-height: 1.5;
+}
+
+/**********************************TABLET**********************************/
+
+@media screen and (min-width: 768px) {
+  .members-section-wrapper {
+    padding-top: 65px;
+  }
+
+  .members-title {
+    width: 350px;
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+
+  .members-cards {
+    width: 370px;
+    height: 424px;
+    padding: 22px;
+  }
+
+  .members-cards-role-title {
+    font-size: 28px;
+    line-height: 1.42;
+  }
+
+  .members-cards-name {
+    font-size: 32px;
+
+    line-height: 0.93;
+    letter-spacing: -0.03em;
+    text-transform: none;
+  }
+
+  .members-cards-text {
+    line-height: 1.43;
+    letter-spacing: -0.03em;
+  }
+}
+
+/**********************************DESKTOP**********************************/
+
+@media screen and (min-width: 1440px) {
+  .members-section-wrapper {
+    padding-top: 64px;
+  }
+
+  .members-title {
+    width: 435px;
+    font-size: 140px;
+    line-height: 0.97;
+    padding-left: 50px;
+    margin-bottom: 80px;
+  }
+
+  .members-cards {
+    width: 370px;
+    height: 424px;
+    padding: 30px;
+  }
+
+  .members-cards-text {
+    line-height: 1.43;
+    letter-spacing: -0.03em;
+  }
 }

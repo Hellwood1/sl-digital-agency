@@ -12,14 +12,16 @@ const swiper = new Swiper('.members-swiper-init', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1.5,
-      slidesPerGroup: 2,
-      spaceBetween: 24,
+     slidesPerView: 1.64,
+      spaceBetween: 14,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      slidesPerGroup: 1,   // ⬅ ВАЖЛИВО
     },
     // десктоп і більше
     1440: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 24,
     },
   },
