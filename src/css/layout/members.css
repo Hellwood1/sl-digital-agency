@@ -22,6 +22,7 @@
 }
 
 .members-cards {
+  position: relative;
   width: 282px;
   display: flex;
   color: var(--black);
@@ -30,9 +31,9 @@
   flex-direction: column;
   align-items: flex-start;
   row-gap: 18px;
-
   border-radius: 30px;
   background: var(--white);
+  overflow: hidden;
 }
 
 .members-cards-role-title {
@@ -59,12 +60,65 @@
   text-transform: uppercase;
 }
 
-.members-cards-text {
+.members-cards-text,
+.members-cards-overlay-text {
   font-family: 'SpaceGrotesk';
-  font-size: 15px;
-
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* Overlay */
+
+.overlay-first-member-card,
+.overlay-second-member-card,
+.overlay-third-member-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 282px;
+  height: 450px;
+  color: var(--white);
+  padding: 18px;
+
+  border-radius: 30px;
+  background: var(--blue);
+  transform: translateY(100%);
+  transition: transform 250ms ease-out;
+}
+
+.members-cards-overlay-wrapper,
+.members-cards-second-overlay-wrapper,
+.members-cards-third-overlay-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.members-cards-overlay-role-title {
+  text-align: right;
+  font-size: 22px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.members-card-first-overlay-photo-wrapper,
+.members-card-second-overlay-photo-wrapper,
+.members-card-third-overlay-photo-wrapper {
+  display: flex;
+  width: 148px;
+  height: 198px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-bottom: 18px;
+  background-color: var(--black);
+}
+
+.overlay:hover .overlay-first-member-card,
+.overlay:hover .overlay-second-member-card,
+.overlay:hover .overlay-third-member-card {
+  transform: translateY(0%);
 }
 
 /**********************************TABLET**********************************/
@@ -72,6 +126,10 @@
 @media screen and (min-width: 768px) {
   .members-section-wrapper {
     padding-top: 65px;
+  }
+
+  .members-swiper-init {
+    overflow: visible;
   }
 
   .members-title {
@@ -83,7 +141,7 @@
 
   .members-cards {
     width: 370px;
-    height: 424px;
+    height: 444px;
     padding: 22px;
   }
 
@@ -104,6 +162,28 @@
     line-height: 1.43;
     letter-spacing: -0.03em;
   }
+
+  /* Overlay */
+
+  .overlay-first-member-card,
+  .overlay-second-member-card,
+  .overlay-third-member-card {
+    width: 370px;
+    height: 444px;
+    padding: 22px;
+  }
+
+  .members-cards-overlay-wrapper,
+  .members-cards-second-overlay-wrapper,
+  .members-cards-third-overlay-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .members-cards-overlay-role-title {
+    font-size: 28px;
+    line-height: 1.42;
+  }
 }
 
 /**********************************DESKTOP**********************************/
@@ -121,9 +201,12 @@
     margin-bottom: 80px;
   }
 
-  .members-cards {
+  .members-cards,
+  .overlay-first-member-card,
+  .overlay-second-member-card,
+  .overlay-third-member-card {
     width: 370px;
-    height: 424px;
+    height: 444px;
     padding: 30px;
   }
 
