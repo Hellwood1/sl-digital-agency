@@ -33,7 +33,6 @@
   row-gap: 18px;
   border-radius: 30px;
   background: var(--white);
-  overflow: hidden;
 }
 
 .members-cards-role-title {
@@ -69,6 +68,10 @@
 }
 
 /* Overlay */
+
+.overlay {
+  overflow: hidden;
+}
 
 .overlay-first-member-card,
 .overlay-second-member-card,
