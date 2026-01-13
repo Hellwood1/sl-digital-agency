@@ -124,6 +124,21 @@
   transform: translateY(0%);
 }
 
+.members-swiper-init .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.members-swiper-init .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.members-swiper-init .swiper-pagination-bullet-active {
+  background-color: var(--white);
+}
 /**********************************TABLET**********************************/
 
 @media screen and (min-width: 768px) {
