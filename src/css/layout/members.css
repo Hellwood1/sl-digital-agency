@@ -61,41 +61,66 @@
 
 .members-cards-text,
 .members-cards-overlay-text {
-  font-family: 'SpaceGrotesk';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-/* Overlay */
+/* BACK-FLIP ANIMATION */
 
 .overlay {
-  overflow: hidden;
+  position: relative;
+  perspective: 2500px;
+}
+
+.card-shell {
+  width: 282px;
+  height: 480px;
+}
+
+.card {
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: transform 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  transform: rotateY(0deg) translateZ(0.1px);
+}
+.card-back {
+  transform: rotateY(180deg) translateZ(0.1px);
+}
+
+.overlay.is-flipped .card {
+  transform: rotateY(180deg);
 }
 
 .overlay-first-member-card,
 .overlay-second-member-card,
 .overlay-third-member-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   width: 282px;
   height: 450px;
-  color: var(--white);
   padding: 18px;
-
   border-radius: 30px;
   background: var(--blue);
-  transform: translateY(100%);
-  transition: transform 250ms ease-out;
-}
-
-.members-cards-overlay-wrapper,
-.members-cards-second-overlay-wrapper,
-.members-cards-third-overlay-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .members-cards-overlay-role-title {
@@ -106,9 +131,7 @@
   margin-bottom: 18px;
 }
 
-.members-card-first-overlay-photo-wrapper,
-.members-card-second-overlay-photo-wrapper,
-.members-card-third-overlay-photo-wrapper {
+.members-card-back-photo-wrapper {
   display: flex;
   width: 148px;
   height: 198px;
@@ -116,12 +139,6 @@
   margin-left: auto;
   margin-bottom: 18px;
   background-color: var(--black);
-}
-
-.overlay:hover .overlay-first-member-card,
-.overlay:hover .overlay-second-member-card,
-.overlay:hover .overlay-third-member-card {
-  transform: translateY(0%);
 }
 
 .members-swiper-init .swiper-pagination {
@@ -224,12 +241,30 @@
   .overlay-second-member-card,
   .overlay-third-member-card {
     width: 370px;
-    height: 444px;
+    height: 484px;
     padding: 30px;
   }
 
-  .members-cards-text {
+  .members-cards-text,
+  .members-cards-overlay-text {
     line-height: 1.43;
     letter-spacing: -0.03em;
+  }
+
+  .card-shell {
+    width: 282px;
+    height: 546px;
+  }
+
+  .members-cards-overlay-role-title {
+    margin-bottom: 60px;
+  }
+
+  .members-card-back-photo-wrapper {
+    margin-bottom: 54px;
+  }
+
+  .overlay:hover .card {
+    transform: rotateY(180deg);
   }
 }
