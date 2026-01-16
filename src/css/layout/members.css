@@ -109,10 +109,6 @@
   transform: rotateY(180deg) translateZ(0.1px);
 }
 
-/* .overlay:hover .card {
-  transform: rotateY(180deg);
-} */
-
 .overlay.is-flipped .card {
   transform: rotateY(180deg);
 }
