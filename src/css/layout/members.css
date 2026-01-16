@@ -113,7 +113,7 @@
   transform: rotateY(180deg);
 } */
 
-.overlay:hover .card {
+.overlay:active .card {
   transform: rotateY(180deg);
 }
 
