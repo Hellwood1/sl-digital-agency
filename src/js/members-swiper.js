@@ -5,8 +5,7 @@ const swiper = new Swiper('.members-swiper-init', {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 12,
-  preventClicks: false,
-  preventClicksPropagation: false,
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
