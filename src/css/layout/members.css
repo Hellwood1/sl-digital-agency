@@ -109,12 +109,12 @@
   transform: rotateY(180deg) translateZ(0.1px);
 }
 
-.overlay.is-flipped .card {
+/* .overlay.is-flipped .card {
   transform: rotateY(180deg);
-}
+} */
 
-.members-swiper-init {
-  touch-action: pan-y;
+.overlay:hover .card {
+  transform: rotateY(180deg);
 }
 
 .overlay-first-member-card,
@@ -266,9 +266,5 @@
 
   .members-card-back-photo-wrapper {
     margin-bottom: 54px;
-  }
-
-  .overlay:hover .card {
-    transform: rotateY(180deg);
   }
 }
