@@ -5,6 +5,8 @@ const swiper = new Swiper('.members-swiper-init', {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 12,
+  preventClicks: false,
+  preventClicksPropagation: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -23,6 +25,8 @@ const swiper = new Swiper('.members-swiper-init', {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 24,
+      preventClicks: true,
+      preventClicksPropagation: true,
     },
   },
 });
