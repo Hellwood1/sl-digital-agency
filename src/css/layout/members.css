@@ -112,6 +112,7 @@
 .overlay.is-flipped .card {
   transform: rotateY(180deg);
 }
+
 .members-swiper-init {
   touch-action: pan-y;
 }
