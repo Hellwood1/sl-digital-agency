@@ -18,15 +18,14 @@ const swiper = new Swiper('.members-swiper-init', {
       spaceBetween: 14,
       centeredSlides: true,
       centeredSlidesBounds: true,
-      slidesPerGroup: 1,   // ⬅ ВАЖЛИВО
+      slidesPerGroup: 1,
     },
-    // десктоп і більше
+
     1440: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 24,
-      preventClicks: true,
-      preventClicksPropagation: true,
+
     },
   },
 });
