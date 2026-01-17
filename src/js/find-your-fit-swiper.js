@@ -3,7 +3,7 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper('.cards-swiper', {
   loop: false,
-  slidesPerView: 'auto',
+  slidesPerView: 1.08,
   spaceBetween: 12,
 
   pagination: {
@@ -14,9 +14,11 @@ const swiper = new Swiper('.cards-swiper', {
 
   breakpoints: {
     768: {
+      slidesPerView: 2.01,
       spaceBetween: 24,
     },
     1440: {
+      slidesPerView: 1.25,
       spaceBetween: 24,
     },
   },
