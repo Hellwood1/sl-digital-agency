@@ -3,9 +3,6 @@
   margin: 50px 0 108px 0;
 }
 
-.membership-title-wrapper {
-}
-
 .membership-title {
   text-align: right;
   width: 158px;
@@ -18,7 +15,11 @@
 
 .membership-article-list {
   display: flex;
-  gap: 9px;
+}
+
+.membership-article-item {
+  width: 320px !important;
+  box-sizing: border-box;
 }
 
 .membership-list-wrapper {
@@ -40,15 +41,58 @@
 .membership-subtitle {
   font-size: 15px;
   letter-spacing: -0.03em;
+  padding-bottom: 36px;
 }
 
 .membership-features-title {
   font-size: 15px;
+  padding-bottom: 18px;
+}
+
+.membership-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .membership-item {
-  font-size: 15px;
   font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 16px;
+
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--white);
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.membership-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url('/img/find-your-fit/check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.membership-item.is-not-included {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.membership-item.is-not-included::before {
+  opacity: 0.4;
+}
+
+.membership-item.is-included-arrow::before {
+  background-image: url('/img/find-your-fit/arrow.png');
+  margin-top: 7px;
 }
 
 .membership-btn {
@@ -60,4 +104,6 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+
+  align-self: center;
 }
